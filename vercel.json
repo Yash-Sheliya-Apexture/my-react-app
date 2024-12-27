@@ -1,10 +1,15 @@
 {
-    "redirects": [
-      {
-        "source": "/:match*",
-        "destination": "/index.html",
-        "permanent": false
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/:match*",
+      "destination": "/index.html",
+      "permanent": false,
+      "has": [
+        {
+          "type": "host",
+          "value": "www"
+        }
+      ]
+    }
+  ]
+}

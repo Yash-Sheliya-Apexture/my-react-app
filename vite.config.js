@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  build: {
-    outDir: 'dist', // Ensure output is directed to the "dist" folder
-  },
   server: {
-    historyApiFallback: true, // This helps prevent 404 on page refresh
+    historyApiFallback: true,  // Enables React Router to work correctly on refresh
+  },
+  build: {
+    outDir: 'dist',  // Ensure Vercel looks for the dist directory for production builds
   },
 });
