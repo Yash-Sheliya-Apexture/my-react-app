@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  server: {
-    historyApiFallback: true, // this fixes 404 errors on page refresh
-  },
   build: {
-    outDir: 'build', // default Vercel directory
+    outDir: 'dist', // Ensure output is directed to the "dist" folder
+  },
+  server: {
+    historyApiFallback: true, // This helps prevent 404 on page refresh
   },
 });
