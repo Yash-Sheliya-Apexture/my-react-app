@@ -2,9 +2,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   server: {
-    historyApiFallback: true,  // Enables React Router to work correctly on refresh
+    historyApiFallback: true, // Fixes 400 error on page reload
   },
   build: {
-    outDir: 'dist',  // Ensure Vercel looks for the dist directory for production builds
+    outDir: 'dist', // Ensure the build output is in the "dist" folder
   },
 });
