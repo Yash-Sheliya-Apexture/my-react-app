@@ -1,15 +1,8 @@
 {
-  "redirects": [
-    {
-      "source": "/:match*",
-      "destination": "/index.html",
-      "permanent": false,
-      "has": [
-        {
-          "type": "host",
-          "value": "www"
-        }
-      ]
-    }
+  "rewrites": [
+      {
+          "source": "/(.*)",
+          "destination": "/index.html"
+      }
   ]
 }
